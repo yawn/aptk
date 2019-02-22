@@ -75,7 +75,7 @@ func Parse(client *sts.STS, tuple *Tuple) (*sts.GetCallerIdentityOutput, error) 
 }
 
 // Prepare extracts the tuple required for Parse. This should be easily
-// reproducable in other SDK environments.
+// reproducible in other SDK environments.
 func Prepare(client *sts.STS) (*Tuple, error) {
 
 	req, _ := client.GetCallerIdentityRequest(nil)
